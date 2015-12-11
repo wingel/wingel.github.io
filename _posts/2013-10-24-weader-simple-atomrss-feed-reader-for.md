@@ -7,7 +7,7 @@ tags:
 - Weader
 - android
 modified_time: '2013-10-24T22:09:57.781+02:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-7495790066695766270
+id: tag:blogger.com,1999:blog-4618495377058807667.post-7495790066695766270
 redirect_from: /2013/10/weader-simple-atomrss-feed-reader-for.html
 ---
 Ever since Google cancelled Google Reader I've been looking for a new feed

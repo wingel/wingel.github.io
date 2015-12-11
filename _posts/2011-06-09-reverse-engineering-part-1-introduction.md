@@ -7,7 +7,7 @@ tags:
 - reverse engineering
 modified_time: '2011-06-09T16:33:32.997+02:00'
 thumbnail: http://1.bp.blogspot.com/-J9Qqt9LGlew/TfC3DkXtcfI/AAAAAAAAABg/vouWyfgBAp4/s72-c/parallax-top-small.jpg
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-836379527322765696
+id: tag:blogger.com,1999:blog-4618495377058807667.post-836379527322765696
 redirect_from: /2011/06/reverse-engineering-part-1-introduction.html
 ---
 

@@ -4,7 +4,7 @@ title: Persistent device naming on Fedora 17
 date: '2012-11-12T23:57:00.000+01:00'
 tags:
 modified_time: '2012-11-12T23:57:25.190+01:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-5954802645584172628
+id: tag:blogger.com,1999:blog-4618495377058807667.post-5954802645584172628
 redirect_from: /2012/11/persistent-device-naming-on-fedora-17.html
 ---
 

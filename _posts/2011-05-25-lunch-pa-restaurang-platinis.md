@@ -6,7 +6,7 @@ tags:
 - restauranger
 - lunch
 modified_time: '2011-06-09T13:55:41.989+02:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-2950772421761812026
+id: tag:blogger.com,1999:blog-4618495377058807667.post-2950772421761812026
 redirect_from: /2011/05/lunch-pa-restaurang-platinis.html
 ---
 

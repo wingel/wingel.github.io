@@ -4,7 +4,7 @@ title: DHL - fortsättningen
 date: '2011-05-30T12:55:00.000+02:00'
 tags: 
 modified_time: '2011-05-30T12:55:24.316+02:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-5235449015353445486
+id: tag:blogger.com,1999:blog-4618495377058807667.post-5235449015353445486
 redirect_from: /2011/05/dhl-fortsattningen.html
 ---
 

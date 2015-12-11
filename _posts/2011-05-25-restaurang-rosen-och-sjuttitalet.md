@@ -6,7 +6,7 @@ tags:
 - restauranger
 - lunch
 modified_time: '2011-06-09T13:56:02.747+02:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-6476485124234264867
+id: tag:blogger.com,1999:blog-4618495377058807667.post-6476485124234264867
 redirect_from: /2011/05/restaurang-rosen-och-sjuttitalet.html
 ---
 

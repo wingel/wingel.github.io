@@ -4,7 +4,7 @@ title: DHL och hemmakontor
 date: '2011-05-27T17:04:00.000+02:00'
 tags: 
 modified_time: '2011-05-27T17:04:55.751+02:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-6136884691726585051
+id: tag:blogger.com,1999:blog-4618495377058807667.post-6136884691726585051
 redirect_from: /2011/05/dhl-och-hemmakontor.html
 ---
 

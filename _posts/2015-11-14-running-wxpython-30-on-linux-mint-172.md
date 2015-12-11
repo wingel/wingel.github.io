@@ -4,7 +4,7 @@ title: Running wxPython 3.0 on Linux Mint 17.2
 date: '2015-11-14T17:37:00.000+01:00'
 tags:
 modified_time: '2015-11-14T17:37:10.213+01:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-6059973465350912087
+id: tag:blogger.com,1999:blog-4618495377058807667.post-6059973465350912087
 redirect_from: /2015/11/running-wxpython-30-on-linux-mint-172.html
 ---
 

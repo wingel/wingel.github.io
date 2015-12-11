@@ -4,7 +4,7 @@ title: Nu har även jag blivit med en blog
 date: '2011-05-25T14:20:00.000+02:00'
 tags:
 modified_time: '2011-05-25T14:20:50.852+02:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-6189704231038907711
+id: tag:blogger.com,1999:blog-4618495377058807667.post-6189704231038907711
 redirect_from: /2011/05/nu-har-aven-jag-blivit-med-en-blog.html
 ---
 

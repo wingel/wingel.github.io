@@ -4,7 +4,7 @@ title: Kass marknadsföring
 date: '2014-10-25T19:41:00.001+02:00'
 tags:
 modified_time: '2014-10-25T19:41:23.802+02:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-6328127237228606104
+id: tag:blogger.com,1999:blog-4618495377058807667.post-6328127237228606104
 redirect_from: /2014/10/kass-marknadsforing.html
 ---
 

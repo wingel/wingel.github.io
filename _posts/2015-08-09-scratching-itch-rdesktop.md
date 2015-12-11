@@ -4,7 +4,7 @@ title: Scratching an itch - rdesktop
 date: '2015-08-09T21:46:00.000+02:00'
 tags:
 modified_time: '2015-08-09T21:46:43.563+02:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-6847617909966773516
+id: tag:blogger.com,1999:blog-4618495377058807667.post-6847617909966773516
 redirect_from: /2015/08/scratching-itch-rdesktop.html
 ---
 

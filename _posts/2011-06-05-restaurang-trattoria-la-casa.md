@@ -5,7 +5,7 @@ date: '2011-06-05T19:17:00.002+02:00'
 tags:
 - restauranger
 modified_time: '2011-06-09T13:54:45.559+02:00'
-blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-291887450436599568
+id: tag:blogger.com,1999:blog-4618495377058807667.post-291887450436599568
 redirect_from: /2011/06/restaurang-trattoria-la-casa.html
 ---
 
