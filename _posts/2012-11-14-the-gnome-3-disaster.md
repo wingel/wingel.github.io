@@ -5,7 +5,7 @@ date: '2012-11-14T20:14:00.003+01:00'
 tags:
 modified_time: '2012-11-14T20:21:29.118+01:00'
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-3126794908565826676
-permalink: /2012/11/the-gnome-3-disaster.html
+redirect_from: /2012/11/the-gnome-3-disaster.html
 ---
 
 Yes, this is yet another rant about Gnome 3.  Others have written

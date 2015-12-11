@@ -129,7 +129,8 @@ def main():
     for fn in fns:
         # fix_permalink(fn)
         # convert_to_markdown(fn)
-        fetch_images(fn)
+        # fetch_images(fn)
+        redirect_from(fn)
 
 main()
 

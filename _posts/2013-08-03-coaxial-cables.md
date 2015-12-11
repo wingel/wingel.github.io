@@ -7,7 +7,7 @@ tags:
 modified_time: '2013-08-03T12:04:39.629+02:00'
 thumbnail: http://2.bp.blogspot.com/-NGjdbbp-NOg/UfzDgiiwVLI/AAAAAAAAAGI/nvgAcXVHQxY/s72-c/square.png
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-5994926949903660941
-permalink: /2013/08/coaxial-cables.html
+redirect_from: /2013/08/coaxial-cables.html
 ---
 
 It's been a long time since I wrote anything here so I guess it's time

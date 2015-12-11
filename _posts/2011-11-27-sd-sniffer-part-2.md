@@ -8,7 +8,7 @@ tags:
 - SD bus
 modified_time: '2011-11-27T22:50:19.729+01:00'
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-2031177423977693249
-permalink: /2011/11/sd-sniffer-part-2.html
+redirect_from: /2011/11/sd-sniffer-part-2.html
 ---
 
 I've finally had time to play around a bit more with the [SD

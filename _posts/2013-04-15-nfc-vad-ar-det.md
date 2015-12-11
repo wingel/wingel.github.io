@@ -5,7 +5,7 @@ date: '2013-04-15T20:09:00.001+02:00'
 tags: 
 modified_time: '2013-04-17T19:49:53.882+02:00'
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-551203389437497090
-permalink: /2013/04/nfc-vad-ar-det.html
+redirect_from: /2013/04/nfc-vad-ar-det.html
 ---
 
 Jag har just skaffat en ny Android-telefon med stöd för "NFC".  NFC

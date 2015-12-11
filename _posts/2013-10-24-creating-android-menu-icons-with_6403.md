@@ -7,7 +7,7 @@ tags:
 modified_time: '2013-10-24T22:19:41.175+02:00'
 thumbnail: http://4.bp.blogspot.com/-KFf2C8bE_aw/Umll304fT0I/AAAAAAAAAGY/8Ohslhw1z-0/s72-c/inkscape-1.png
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-2572784055219303101
-permalink: /2013/10/creating-android-menu-icons-with_6403.html
+redirect_from: /2013/10/creating-android-menu-icons-with_6403.html
 ---
 
 I've spent a few weeks writing a feed reader for Android,

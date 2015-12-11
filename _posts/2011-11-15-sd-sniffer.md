@@ -9,7 +9,7 @@ tags:
 modified_time: '2011-11-27T22:49:04.670+01:00'
 thumbnail: http://3.bp.blogspot.com/-aVy4IP_Mk14/TsLMLERnopI/AAAAAAAAACk/uUlIaQoWeJA/s72-c/sd-sniff-v1-sch.png
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-6933073284981773926
-permalink: /2011/11/sd-sniffer.html
+redirect_from: /2011/11/sd-sniffer.html
 ---
 
 I need to debug a problem with a SD bus.  I have previously used a

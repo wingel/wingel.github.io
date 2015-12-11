@@ -6,7 +6,7 @@ tags:
 - restauranger
 modified_time: '2011-06-09T13:54:45.559+02:00'
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-291887450436599568
-permalink: /2011/06/restaurang-trattoria-la-casa.html
+redirect_from: /2011/06/restaurang-trattoria-la-casa.html
 ---
 
 I fredags ville jag bjuda ut min mor på födelsedagsmiddag och vi

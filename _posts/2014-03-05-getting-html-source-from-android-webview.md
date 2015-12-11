@@ -5,7 +5,7 @@ date: '2014-03-05T01:40:00.000+01:00'
 tags:
 modified_time: '2014-03-05T02:01:05.255+01:00'
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-2915903775355369815
-permalink: /2014/03/getting-html-source-from-android-webview.html
+redirect_from: /2014/03/getting-html-source-from-android-webview.html
 ---
 
 On and off I'm working on writing an [Atom/RSS feed

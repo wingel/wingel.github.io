@@ -7,7 +7,7 @@ tags:
 - lunch
 modified_time: '2011-07-12T22:23:33.310+02:00'
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-1712786759664823204
-permalink: /2011/07/pong-asian-tapas-kista.html
+redirect_from: /2011/07/pong-asian-tapas-kista.html
 ---
 
 Jag har börjat jobba i Kista. För att vara ett ställe med så mycket

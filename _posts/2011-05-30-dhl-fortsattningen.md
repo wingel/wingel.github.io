@@ -5,7 +5,7 @@ date: '2011-05-30T12:55:00.000+02:00'
 tags: 
 modified_time: '2011-05-30T12:55:24.316+02:00'
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-5235449015353445486
-permalink: /2011/05/dhl-fortsattningen.html
+redirect_from: /2011/05/dhl-fortsattningen.html
 ---
 
 Jag hade ju en del strul med DHL i fredags. När jag ringde jag DHL och

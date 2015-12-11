@@ -6,7 +6,7 @@ tags:
 modified_time: '2013-11-18T02:41:19.758+01:00'
 thumbnail: http://4.bp.blogspot.com/-q7JgMyoxN_4/Uolu1rDprrI/AAAAAAAAAI4/dK67iQdfCmc/s72-c/x-pcb.jpg
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-427762470802484282
-permalink: /2013/11/halloween-milling.html
+redirect_from: /2013/11/halloween-milling.html
 ---
 
 A few years ago I bought a cheap CNC mill from China. It's actually a

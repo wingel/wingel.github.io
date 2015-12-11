@@ -5,7 +5,7 @@ date: '2013-11-15T18:48:00.001+01:00'
 tags:
 modified_time: '2013-11-17T23:31:10.109+01:00'
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-8456260003549778912
-permalink: /2013/11/lifehacking.html
+redirect_from: /2013/11/lifehacking.html
 ---
 
 I'm a nerd, I find technology fascinating. In my career I've done just

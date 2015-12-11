@@ -7,7 +7,7 @@ tags:
 - lunch
 modified_time: '2011-07-12T22:22:42.630+02:00'
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-5468003815491930926
-permalink: /2011/07/restaurang-88-kista.html
+redirect_from: /2011/07/restaurang-88-kista.html
 ---
 
 Kineser i allmänhet gillar numerologi, talet 4 betyder otur medans

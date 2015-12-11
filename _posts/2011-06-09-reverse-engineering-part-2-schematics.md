@@ -8,7 +8,7 @@ tags:
 modified_time: '2011-06-09T16:11:34.060+02:00'
 thumbnail: http://3.bp.blogspot.com/-wK0NKI2R1L8/TfDGtWKDD4I/AAAAAAAAABs/85QZ_G3_vWw/s72-c/parallax-sketch.jpg
 blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-7382718178092693831
-permalink: /2011/06/reverse-engineering-part-2-schematics.html
+redirect_from: /2011/06/reverse-engineering-part-2-schematics.html
 ---
 
 In [my last post](http://blog.weinigel.se/2011/06/reverse-engineering-part-1-introduction.html) I described how I wanted to reverse engineer
