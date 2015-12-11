@@ -8,5 +8,8 @@ url: "http://blog.weinigel.se" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username: wingel
 
+gems:
+  - jekyll-feed
+
 # Build settings
 markdown: kramdown
