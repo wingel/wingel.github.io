@@ -31,9 +31,7 @@ glass will become very fuzzy.  Luckily enough my old AGFA scanner has
 a good enough field of depth to work with PCBs so I get quite useful
 images out of it (click on the image for a larger version).
 
-[![Parallax RFID Card Reader USB](http://1.bp.blogspot.com/-J9Qqt9LGlew/TfC3DkXtcfI/AAAAAAAAABg/vouWyfgBAp4
-/s320/parallax-top-small.jpg)](http://1.bp.blogspot.com/-J9Qqt9LGlew/TfC3DkXtc
-fI/AAAAAAAAABg/vouWyfgBAp4/s1600/parallax-top-small.jpg)
+[![Parallax RFID Card Reader USB]({{ site.baseurl }}/images/s320/parallax-top-small.jpg)]({{ site.baseurl }}/images/s1600/parallax-top-small.jpg)
 <br>*Parallax RFID Card Reader USB*
 
 Having a good image of the hardware is nice because it means I can
@@ -44,9 +42,7 @@ real life using a magnifying glass or a microscope.
 The next step is to figure out what the components are (click on the
 image for a larger version).
 
-[![Identifying the Components](http://2.bp.blogspot.com/-MsY2Mgo4WrU/TfC6-lytptI/AAAAAAAAABk/obxbwwga9os
-/s400/parallax-components.jpg)](http://2.bp.blogspot.com/-MsY2Mgo4WrU/TfC6-lyt
-ptI/AAAAAAAAABk/obxbwwga9os/s1600/parallax-components.jpg)
+[![Identifying the Components]({{ site.baseurl }}/images/s400/parallax-components.jpg)]({{ site.baseurl }}/images/s1600/parallax-components.jpg)
 <br>*Identifying the Components*
 
 Some of the components are fairly easy to identify.

@@ -45,16 +45,12 @@ the comparators go to a another pin header which matches the ZBUS
 connector on the OpalKelly board.  The comparators and the D/A are
 powered from the OpalKelly board.
 
-[![](http://3.bp.blogspot.com/-aVy4IP_Mk14/TsLMLERnopI/AAAAAAAAACk/uUlIaQoWeJA
-/s400/sd-sniff-v1-sch.png) ](http://3.bp.blogspot.com/-aVy4I
-P_Mk14/TsLMLERnopI/AAAAAAAAACk/uUlIaQoWeJA/s1600/sd-sniff-v1-sch.png)
+[![]({{ site.baseurl }}/images/s400/sd-sniff-v1-sch.png) ]({{ site.baseurl }}/images/s1600/sd-sniff-v1-sch.png)
 
 Next the PCB design.  It did take quite a bit of time to squeeze
 everything onto a 2 layer board, but hopefully it'll all work.
 
-[![](http://1.bp.blogspot.com/-uKakhF47-Ac/TsLO68uPZxI/AAAAAAAAACs/ktSrtqr1_Xs
-/s320/sd-sniff-v1-brd.png)](http://1.bp.blogspot.com/-uKakhF47-Ac/TsLO68uPZxI/
-AAAAAAAAACs/ktSrtqr1_Xs/s1600/sd-sniff-v1-brd.png)
+[![]({{ site.baseurl }}/images/s320/sd-sniff-v1-brd.png)]({{ site.baseurl }}/images/s1600/sd-sniff-v1-brd.png)
 
 Some of the symbols and footprints I'm using are from the [SparkFun
 Eagle library](https://github.com/sparkfun/SparkFun-Eagle- Library).
@@ -64,12 +60,7 @@ can't manage to find again.
 I then mailed off the gerber files to a PCB manufacturer and settled
 down to wait.  14 days later the finished PCBs arrived in the mail.
 
-[![](http://4.bp.blogspot.com/-qzFFpFCFhx4/TsLQgsjz9xI/AAAAAAAAADM/GihRbFHp2fk
-/s200/sd-sniffer-v1-bot.jpg)](http://4.bp.blogspot.com/-qzFFpFCFhx4/TsLQgsjz9x
-I/AAAAAAAAADM/GihRbFHp2fk/s1600/sd-sniffer-v1-bot.jpg)[![](http://2.bp.blogspo
-t.com/-MbO9a2eJSOQ/TsLQkuTUh0I/AAAAAAAAADU/yEYbvtSHS6Y/s200/sd-sniffer-v1-top.
-jpg)](http://2.bp.blogspot.com/-MbO9a2eJSOQ/TsLQkuTUh0I/AAAAAAAAADU/yEYbvtSHS6
-Y/s1600/sd-sniffer-v1-top.jpg)
+[![]({{ site.baseurl }}/images/s200/sd-sniffer-v1-bot.jpg)]({{ site.baseurl }}/images/s1600/sd-sniffer-v1-bot.jpg)[![]({{ site.baseurl }}/images/s200/sd-sniffer-v1-top.jpg)]({{ site.baseurl }}/images/s1600/sd-sniffer-v1-top.jpg)
 
 This is the first time I've used
 [iteadstudio.com](http://iteadstudio.com/) and the results look quite
@@ -80,10 +71,7 @@ place, and then put a SD card in the SD holder and plug the board into
 the SD bus, this way I could verify that the board would work as a
 plain SD extender:
 
-[![](http://4.bp.blogspot.com/-vVSMRjsoy4A/TsLSDJb-
-5bI/AAAAAAAAADc/PMNeci0Hlp4/s320/sd-
-sniff-v1-1.jpg)](http://4.bp.blogspot.com/-vVSMRjsoy4A/TsLSDJb-
-5bI/AAAAAAAAADc/PMNeci0Hlp4/s1600/sd-sniff-v1-1.jpg)
+[![]({{ site.baseurl }}/images/s320/sd-sniff-v1-1.jpg)]({{ site.baseurl }}/images/s1600/sd-sniff-v1-1.jpg)
 
 And it did!  At least with an old an slow SD card.
 
@@ -91,6 +79,5 @@ So next up, test this with a modern high speed SD card running at
 50MHz.  And after that, start soldering some active components onto
 the board.
 
-This post is continued in [part 2](http://blog.weinigel.se/2011/11/sd-sniffer-
-part-2.html).
+This post is continued in [part 2](http://blog.weinigel.se/2011/11/sd-sniffer-part-2.html).
 

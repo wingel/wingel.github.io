@@ -11,8 +11,7 @@ blogger_id: tag:blogger.com,1999:blog-4618495377058807667.post-73827181780926938
 permalink: /2011/06/reverse-engineering-part-2-schematics.html
 ---
 
-In [my last post](http://blog.weinigel.se/2011/06/reverse-engineering-
-part-1-introduction.html) I described how I wanted to reverse engineer
+In [my last post](http://blog.weinigel.se/2011/06/reverse-engineering-part-1-introduction.html) I described how I wanted to reverse engineer
 a RFID card reader. Read that post first if you haven't.
 
 After identifying all the components on the board, the next step is to
@@ -22,7 +21,7 @@ OpenOffice Draw that i printed out so that I had something to make
 notes on, and this is the end result (click on the image for a larger
 version).
 
-[![Draft Schematics](http://3.bp.blogspot.com/-wK0NKI2R1L8/TfDGtWKDD4I/AAAAAAAAABs/85QZ_G3_vWw/s320/parallax-sketch.jpg)](http://3.bp.blogspot.com/-wK0NKI2R1L8/TfDGtWKDD4I/AAAAAAAAABs/85QZ_G3_vWw/s1600/parallax-sketch.jpg)<br/>
+[![Draft Schematics]({{ site.baseurl }}/images/s320/parallax-sketch.jpg)]({{ site.baseurl }}/images/s1600/parallax-sketch.jpg)<br/>
 *Draft Schematics*
 
 I then brought out my old trusty multimeter and switched it to the
@@ -58,9 +57,7 @@ capacitors in parallel on the actual board, and that the reader is in
 read/only mode: the MOD pin is grounded instead of connected to the
 microcontroller.
 
-[![EM4095 - figure 8 - Read/Write mode (High Q factor antenna)](http://4.bp.blogspot.com/-M6tr-etNY7I/TfDNBa1oX6I/AAAAAAAAAB0/Co35Te5dRx0
-/s1600/em4095-reference.png)](http://4.bp.blogspot.com/-M6tr-
-etNY7I/TfDNBa1oX6I/AAAAAAAAAB0/Co35Te5dRx0/s1600/em4095-reference.png)<br/>*EM4095 - figure 8 - Read/Write mode (High Q factor antenna)*
+[![EM4095 - figure 8 - Read/Write mode (High Q factor antenna)]({{ site.baseurl }}/images/s1600/em4095-reference.png)]({{ site.baseurl }}/images/s1600/em4095-reference.png)<br/>*EM4095 - figure 8 - Read/Write mode (High Q factor antenna)*
 
 One thing that fooled me for a while here is that the resistance over
 the antenna is only 30 Ohm, and the resistor in series with the
@@ -75,10 +72,7 @@ I then used the gschem (schematic capture) application from the [gEDA
 project](http://www.gpleda.org/) to produce a cleaned up version of
 the schematics.
 
-[![Cleaned up Schematics](http://3.bp.blogspot.com/-503JglQwAuQ/TfDRgv6yW1I/AAAAAAAAAB8/0kRO-
-QN8mfk/s320/parallax-
-schematics.png)](http://3.bp.blogspot.com/-503JglQwAuQ/TfDRgv6yW1I/AAAAAAAAAB8
-/0kRO-QN8mfk/s1600/parallax-schematics.png)
+[![Cleaned up Schematics]({{ site.baseurl }}/images/s320/parallax-schematics.png)]({{ site.baseurl }}/images/s1600/parallax-schematics.png)
 <br/>*Cleaned up Schematics*
 
 So the RFID part is almost the reference design straight out of the

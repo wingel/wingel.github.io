@@ -68,17 +68,13 @@ First I created a new image in Inkscape and then selected File ->
 Document Properties and set the image size to 48x48 pixels to match
 the menu icon size for the Android hdpi resolution:
 
-[![](http://4.bp.blogspot.com/-KFf2C8bE_aw/Umll304fT0I/AAAAAAAAAGY/8Ohslhw1z-0
-/s320/inkscape-1.png)](http://4.bp.blogspot.com/-KFf2C8bE_aw/Umll304fT0I/AAAAA
-AAAAGY/8Ohslhw1z-0/s1600/inkscape-1.png)
+[![]({{ site.baseurl }}/images/s320/inkscape-1.png)]({{ site.baseurl }}/images/s1600/inkscape-1.png)
 
 To make things a bit easier for me I switched to the Grid tab and set
 up a 1x1 pixel grid with major lines every 8 pixels.  Time to start
 drawing:
 
-[![](http://2.bp.blogspot.com/-0KuYQZiKxRs/UmloIrix2KI/AAAAAAAAAGk/iaNfPsOkw4k
-/s320/inkscape-2.png)](http://2.bp.blogspot.com/-0KuYQZiKxRs/UmloIrix2KI/AAAAA
-AAAAGk/iaNfPsOkw4k/s1600/inkscape-2.png)
+[![]({{ site.baseurl }}/images/s320/inkscape-2.png)]({{ site.baseurl }}/images/s1600/inkscape-2.png)
 
 I needed quite a bit of experimentation to get about the same line
 weight and color as the stock Android icons, but finally managed to
@@ -90,18 +86,14 @@ width of 1.25 pixels and a blur factor of 2.5.
 
 The final touch is to set the layer opacity to 60%.
 
-[![](http://1.bp.blogspot.com/--jYNO0dzP8Y/UmlpkUdyNAI/AAAAAAAAAGw/iH0B93gHnmI
-/s1600/inkscape-3.png)](http://1.bp.blogspot.com/--jYNO0dzP8Y/UmlpkUdyNAI/AAAA
-AAAAAGw/iH0B93gHnmI/s1600/inkscape-3.png)
+[![]({{ site.baseurl }}/images/s1600/inkscape-3.png)]({{ site.baseurl }}/images/s1600/inkscape-3.png)
 
 Export the drawing using File -> Export Bitmap.  First press the Page
 button to use the page boundaries as the limits for the bitmap and
 then set the size to the icon size you want, in my case I chose 48x48
 pixels for hdpi. And then press export to create the bitmap.
 
-[![](http://2.bp.blogspot.com/-VBfi3BQWBP4/UmlrF4ZR4EI/AAAAAAAAAG8/9DWhr075WH8
-/s320/inkscape-4.png)](http://2.bp.blogspot.com/-VBfi3BQWBP4/UmlrF4ZR4EI/AAAAA
-AAAAG8/9DWhr075WH8/s1600/inkscape-4.png)
+[![]({{ site.baseurl }}/images/s320/inkscape-4.png)]({{ site.baseurl }}/images/s1600/inkscape-4.png)
 
 It's possible to use Inkscape from the command line to automate the
 creation of the PNG files.  Put the SVG file in a directory called
@@ -127,9 +119,7 @@ sizes for a launcher icon.
 So here's the result, ldpi, mdpi, hdpi and xhdpi icons.  The top row
 are my new icons, the bottom row are the original Android icons.
 
-[![](http://1.bp.blogspot.com/-dlW_-3F3I6E/Uml0R91T38I/AAAAAAAAAIM/-Ke34VSFUHw
-/s320/icons.png)](http://1.bp.blogspot.com/-dlW_-
-3F3I6E/Uml0R91T38I/AAAAAAAAAIM/-Ke34VSFUHw/s1600/icons.png)
+[![]({{ site.baseurl }}/images/s320/icons.png)]({{ site.baseurl }}/images/s1600/icons.png)
 
 The other icons are very, not perfect, but they'll do.  I am a bit
 confused though, the image here was composed in Gimp and the colors
@@ -145,9 +135,7 @@ nice little icon in SVG format is that it's very easy to modify it to
 create the extra icons I needed in my application, all with the same
 look and feel.
 
-[![](http://1.bp.blogspot.com/-uRSigEQXw8A/Uml8Q7YDILI/AAAAAAAAAIo/mI7nqU0zlaY
-/s1600/icons2.png)](http://1.bp.blogspot.com/-uRSigEQXw8A/Uml8Q7YDILI/AAAAAAAA
-AIo/mI7nqU0zlaY/s1600/icons2.png)
+[![]({{ site.baseurl }}/images/s1600/icons2.png)]({{ site.baseurl }}/images/s1600/icons2.png)
 
 By the way, as you can probably guess, the icons are used to mark
 articles as read or unread.  I'm not totally happy with these symbols,

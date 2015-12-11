@@ -10,8 +10,7 @@ permalink: /2012/11/the-gnome-3-disaster.html
 
 Yes, this is yet another rant about Gnome 3.  Others have written
 about it before, but I just read the announcement that [Gnome 3
-Fallback mode will be dropped](http://mail.gnome.org/archives/release-
-team/2012-November/msg00009.html) and just need to vent my feelings
+Fallback mode will be dropped](http://mail.gnome.org/archives/release-team/2012-November/msg00009.html) and just need to vent my feelings
 somewhere.
 
 English is not my native language.  If it was I might have known

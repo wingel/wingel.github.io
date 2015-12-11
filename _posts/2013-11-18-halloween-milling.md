@@ -28,17 +28,13 @@ takes gerber files produced by a PCB CAD program such as
 really well and makes it possible to quickly testing simple electronic
 designs.
 
-[![](http://4.bp.blogspot.com/-q7JgMyoxN_4/Uolu1rDprrI/AAAAAAAAAI4/dK67iQdfCmc
-/s320/x-pcb.jpg)](http://4.bp.blogspot.com/-q7JgMyoxN_4/Uolu1rDprrI/AAAAAAAAAI
-4/dK67iQdfCmc/s1600/x-pcb.jpg)
+[![]({{ site.baseurl }}/images/s320/x-pcb.jpg)]({{ site.baseurl }}/images/s1600/x-pcb.jpg)
 
 For enclosures I have mostly been bying ready-made enclosures and then
 written a bit of G-code by hand to mill holes in them. I've also been
 milling wood and plastics for simple stuff such as this lid.
 
-[![](http://3.bp.blogspot.com/-53KeKsdsXWY/Uolu7KnSKBI/AAAAAAAAAJA/j9gCVI_P7Os
-/s320/x-lid.jpg)](http://3.bp.blogspot.com/-53KeKsdsXWY/Uolu7KnSKBI/AAAAAAAAAJ
-A/j9gCVI_P7Os/s1600/x-lid.jpg)
+[![]({{ site.baseurl }}/images/s320/x-lid.jpg)]({{ site.baseurl }}/images/s1600/x-lid.jpg)
 
 Writing G-code by hand is a very tedious job, anything more
 complicated than a few holes requires a lot of work. There are a lot

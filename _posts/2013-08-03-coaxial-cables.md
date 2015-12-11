@@ -38,9 +38,7 @@ is just a sine wave, and by adding higher frequency harmonics the
 shape will get closer and closer to a perfect square wave with
 vertical edges that are infinitely short.
 
-[![](http://2.bp.blogspot.com/-NGjdbbp-NOg/UfzDgiiwVLI/AAAAAAAAAGI/nvgAcXVHQxY
-/s400/square.png)](http://2.bp.blogspot.com/-NGjdbbp-
-NOg/UfzDgiiwVLI/AAAAAAAAAGI/nvgAcXVHQxY/s1600/square.png)
+[![]({{ site.baseurl }}/images/s400/square.png)]({{ site.baseurl }}/images/s1600/square.png)
 
 In the physical world is not possible to have harmonics with
 infinitely high frequencies, so all actual electrical signals will
@@ -71,9 +69,7 @@ reflections and losses.
 
 Without further ado, here are the contestants:
 
-[![](http://2.bp.blogspot.com/-OYdQy7Hxfr4/Ufy3mIQhGJI/AAAAAAAAAF4/lfXydwdAvHE
-/s400/cables.jpg)](http://2.bp.blogspot.com/-OYdQy7Hxfr4/Ufy3mIQhGJI/AAAAAAAAA
-F4/lfXydwdAvHE/s1600/cables.jpg)
+[![]({{ site.baseurl }}/images/s400/cables.jpg)]({{ site.baseurl }}/images/s1600/cables.jpg)
 
 Starting from the left, here are the results.
 

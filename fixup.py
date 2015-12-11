@@ -2,6 +2,8 @@
 import html2text
 import subprocess
 import os
+import re
+import urllib2
 
 fns = """
 _posts/2011-05-25-lunch-pa-restaurang-platinis.html
@@ -72,10 +74,62 @@ def convert_to_markdown(fn):
 
     open(newfn, 'w').write(front_matter + markdown)
 
+link_pat = r'\(?P<url>http://[^)]+\)'
+link_pat = r'\((?P<url>http:[^)]+)\)'
+link_re = re.compile(link_pat, re.MULTILINE)
+
+def fetch_images(fn):
+    if fn.endswith('.html'):
+        fn = fn[:-5] + '.md'
+
+    print fn
+
+    data = open(fn).read()
+
+    seen = {}
+
+    i = 0
+    while 1:
+        match = link_re.search(data, i)
+        if not match:
+            break
+
+        print match.group()
+
+        url = match.group('url')
+        url = url.replace('\n', '')
+        print repr(url)
+
+        if url.endswith('.jpg') or url.endswith('.png'):
+            parts = url.split('/')
+            bindir = os.path.join('assets', parts[-2])
+            binfn = os.path.join(bindir, parts[-1])
+            print binfn
+
+            if binfn in seen:
+                assert seen[binfn] == url
+            else:
+                seen[binfn] = url
+                if not os.path.isdir(bindir):
+                    os.makedirs(bindir)
+
+                if not os.path.exists(binfn):
+                    bin = urllib2.urlopen(url).read()
+                    open(binfn, 'wb').write(bin)
+
+            url = '{{ site.baseurl }}/%s' % binfn
+
+        t = data[:match.start()] + '(' + url + ')'
+        i = len(t)
+        data = t + data[match.end():]
+
+    open(fn, 'w').write(data)
+
 def main():
     for fn in fns:
         # fix_permalink(fn)
-        convert_to_markdown(fn)
+        # convert_to_markdown(fn)
+        fetch_images(fn)
 
 main()
 
