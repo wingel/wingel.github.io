@@ -132,3 +132,5 @@ wait for a month for the Chinese new year to end before seeing my
 PCBs.
 
 And I still had that signal I wanted to measure.
+
+Update: This article series is continued in [part 2]({{ site.baseurl }}/2016/02/28/ghz-differential-probe-2.html)
