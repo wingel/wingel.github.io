@@ -5,6 +5,8 @@ date: '2016-02-28T23:30:00.000+01:00'
 tags:
 - nerdy stuff
 id: b598f572-c3ce-4240-bb3b-dfe0a41ecf81
+modified_time: '2016-03-01T22:00:00.000+01:00'
+
 ---
 
 In my last post I described how I had simulated and designed an active
@@ -149,6 +151,11 @@ logarithmic unit](https://en.wikipedia.org/wiki/Decibel) and -3dB
 corresponds almost exactly to half the amplitude.  For my active prove
 this happened somewhere between 200MHz and 400MHz and probably closer
 to 200MHz than to 400MHz.
+
+Update: The previous paragraph is wrong.  -3dB corresponds to a
+halving of power, but since the power is proportional to the square of
+the voltage, -3dB when talking about voltage is the square root of 0.5
+or about 70.7%.  This occurs somewhere between 100MHz and 200MHz.
 
 This is far from the 1 GHz bandwidth I would have liked but the probe
 is definitely very useful anyway.  At 500MHz the absolute amplitude is
