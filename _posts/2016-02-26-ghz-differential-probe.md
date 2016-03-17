@@ -29,7 +29,7 @@ I have used [Tina-TI](http://www.ti.com/tool/tina-ti) before and am
 fairly familiar with it so a natural beginning was to try to simulate
 the circuit I had in mind in Tina.
 
-[![Probe schematics]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-schematic.png)]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-schematic.png)
+[![Probe schematics]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-schematic.png)]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-schematic.png)
 
 I tried a bunch of different OP-amps from the TI libraries but settled
 on the [LMH6702](http://www.ti.com/product/lmh6702), a "1.7-GHz
@@ -68,14 +68,14 @@ DC performance in simulation looks good.  +/-3V at the inputs (X axis)
 become a +/-300mV signal at the scope (VM3).  VM1 and VM2 show the
 signals after the first stage.
 
-[![DC analysis]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-dc.png)]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-dc.png)
+[![DC analysis]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-dc.png)]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-dc.png)
 
 AC performance looks decent.  A 1GHz signal signal will be attenuated
-by 30dB, but a 500 MHz signal ought to still be visible on the scope.
+by 30dB, but a 500MHz signal ought to still be visible on the scope.
 The phase error doesn't look to bad, by the time it becomes large the
 signal should be so attenuated that it doesn't matter.
 
-[![AC analysis]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-ac.png)]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-ac.png)
+[![AC analysis]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-ac.png)]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-ac.png)
 
 A transient simulation of a 100MHz square wave at the input shows that
 the signal will be attenuated by 1:2 on top of the baseline 1:10
@@ -83,12 +83,12 @@ attenuation.  Most of the fine details in the signal have disappeared
 but it should still be possible to measure the frequency and give a
 rough idea about the quality of the signal.
 
-[![Transient simulation of a 100MHz signal]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-100.png)]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-100.png)
+[![Transient simulation of a 100MHz signal]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-100.png)]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-100.png)
 
-At 500 MHz all detail has been lost and we're basically left with a
+At 500MHz all detail has been lost and we're basically left with a
 weak sine wave.
 
-[![Transient simulation of a 500MHz signal]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-500.png)]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-500.png)
+[![Transient simulation of a 500MHz signal]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-500.png)]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-500.png)
 
 Even though the simulation results wouldn't fulfill my requirements I
 decided to create a PCB design in Eagle.  I actually created multiple
@@ -109,7 +109,7 @@ compromise signal integrity at high frequencies.
 
 Here's the PCB I finally sent off for prodution.
 
-[![PCB design]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/probe-brd.png)]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/probe-brd.png)
+[![PCB design]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/probe-brd.png)]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/probe-brd.png)
 
 A - Single ended probe with one OP-amp<br>
 B - Two standard OP-amps as the first stage<br>
@@ -133,4 +133,4 @@ PCBs.
 
 And I still had that signal I wanted to measure.
 
-Update: This article series is continued in [part 2]({{ site.baseurl }}/2016/02/28/ghz-differential-probe-2.html)
+Update: This article series is continued in [part&nbsp;2]({{site.baseurl}}/2016/02/28/ghz-differential-probe-2.html) and [part&nbsp;3]({{site.baseurl}}/2016/03/16/ghz-differential-probe-3.html) 

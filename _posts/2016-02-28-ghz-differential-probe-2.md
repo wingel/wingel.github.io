@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An almost-GHz active differential oscilloscope probe (Part 2)
+title: An almost-GHz active differential oscilloscope probe (Part&nbsp;2)
 date: '2016-02-28T23:30:00.000+01:00'
 tags:
 - nerdy stuff
@@ -11,15 +11,14 @@ modified_time: '2016-03-01T22:00:00.000+01:00'
 
 In my last post I described how I had simulated and designed an active
 scope probe and sent off the design to a PCB manufacturing house.  If
-you haven't read [part
-1]({{ site.baseurl }}/2016/02/26/ghz-differential-probe.html) yet
+you haven't read [part&nbsp;1]({{site.baseurl}}/2016/02/26/ghz-differential-probe.html) yet
 you might want to do that before continuing.
 
 A week later the PCBs arrived in the mail.  That evening I assembled
 the boards.  It didn't take long, there were only about a dozen
 components to mount.
 
-[![Assembled probe]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/assembled-probe.jpg)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/assembled-probe.jpg)
+[![Assembled probe]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/assembled-probe.jpg)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/assembled-probe.jpg)
 
 I first needed something to probe.  Luckily enough I had a [Si5338
 Evaluation
@@ -34,7 +33,7 @@ see the clock signal from the source with as little distortion as
 possible.  As you can see in this screenshot the clock is running at
 25MHz and has an amplitude of about 1V peak-to-peak.
 
-[![25MHz source signal]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/source-25.png)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/source-25.png)
+[![25MHz source signal]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/source-25.png)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/source-25.png)
 
 _Unnecessary details: My old Tektronix 11801B oscilloscope is a bit
 clunky to use.  With the sampling heads I have I can't trigger
@@ -47,7 +46,7 @@ signal._
 Anyway, I could then use a normal passive scope probe to probe the
 signal at the "tee" connector.
 
-[![Passive probing]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/passive-probing.jpg)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/passive-probing.jpg)
+[![Passive probing]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/passive-probing.jpg)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/passive-probing.jpg)
 
 The 11801B can't use passive probes anyway, the inputs are 50 Ohm only
 and won't work with passive probes.  Instead I give you a screenshot
@@ -55,7 +54,7 @@ of my 100MHz Hameg scope with the passive probe above.  There's a lot
 of overshoot, it's still possible to see that it is a 25MHz signal,
 but quite frankly it looks like crap.
 
-[![25MHz signal through a passive probe]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/passive-25.png)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/passive-25.png)
+[![25MHz signal through a passive probe]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/passive-25.png)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/passive-25.png)
 
 A 1:10 passive probe with 10MΩ resistance is perfect for probing slow
 and weak signals, but the capacitance of such a probe is quite large,
@@ -71,7 +70,7 @@ slowed down the signal and changed the shape considerably.  And if
 it's this bad at 25MHz, imagine what will happen at 500MHz.  This
 could actually make some circuits stop working when they are probed.
 
-[![25MHz source signal probed by passive probe]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/source-passive-25.png)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/source-passive-25.png)
+[![25MHz source signal probed by passive probe]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/source-passive-25.png)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/source-passive-25.png)
 
 It was finally time to test my active probe.  The LMH6702 has an input
 resistance of about 1.4MΩ and an input capacitance of about 1.5pF and
@@ -85,7 +84,7 @@ In this screenshot the bright white trace is the signal that comes out
 of the probe and the darker gray trace is the direct signal from the
 source.
 
-[![25MHz signal probed by active probe]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-25.png)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-25.png)
+[![25MHz signal probed by active probe]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-25.png)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-25.png)
 
 The source signal has barely changed compared to not being probed.  At
 25MHz the active probe doesn't seem to load the signal being probed at
@@ -106,33 +105,33 @@ output from the probe but most of the details have been lost.  Also
 note that there is a constant delay of about 2.3ns, the time it takes
 for the signal to pass through the OP-amps.
 
-[![100MHz signal probed by active probe]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-100.png)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-100.png)
+[![100MHz signal probed by active probe]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-100.png)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-100.png)
 
 This was actually pretty close to what was predicted by the
 simulation.  Note that in the simulation the input signal is
 +/-1V&nbsp;=&nbsp;2V peak-to-peak and the source signal above is 1V
 peak-to-peak so all amplitudes in the simulation are twice as large.
 
-[![Transient simulation of a 100MHz signal]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-100.png)]({{ site.baseurl }}/images/2016-02-26-ghz-differential-probe/simulation-100.png)
+[![Transient simulation of a 100MHz signal]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-100.png)]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-100.png)
 
 At 200MHz all that was left was a triangle wave and the amplitude out
 from the probe was markedly lower.  This is to be expected as the gain
 of the probe decreases at higher frequencies.
 
-[![200MHz signal probed by active probe]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-200.png)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-200.png)
+[![200MHz signal probed by active probe]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-200.png)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-200.png)
 
 At 400MHz the amplitude was less than half of the source signal.  By
 the way, don't trust the Rise/Fall measurements the the bottom of the
 screen, they are quite noisy and jumped around a lot.
 
-[![400MHz signal probed by active probe]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-400.png)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-400.png)
+[![400MHz signal probed by active probe]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-400.png)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-400.png)
 
 Unfortunately the Si5338 clock generator was unable to output a 500MHz
 signal so I couldn't make any direct comparison to the simulation
 at 500MHz.  Instead I cranked the clock generator up to 700MHz, which
 is almost as high as it can go.  The amplitude has halved again.
 
-[![700MHz signal probed by active probe]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-700.png)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/active-700.png)
+[![700MHz signal probed by active probe]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-700.png)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/active-700.png)
 
 To get an idea of how much the active probe loaded the source signal
 at 700MHz I made two measurements and overlaid them on each other.
@@ -143,7 +142,7 @@ slightly slower.  It's actually pretty good though, it's within 10%
 and would probably not make any difference and allow most circuits to
 keep working even when probed.
 
-[![700MHz loading by active probe]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/loading-700.png)]({{ site.baseurl }}/images/2016-02-28-ghz-differential-probe-2/loading-700.png)
+[![700MHz loading by active probe]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/loading-700.png)]({{site.baseurl}}/images/2016-02-28-ghz-differential-probe-2/loading-700.png)
 
 The bandwidth of a device is usually defined as the frequency at which
 the gain has dropped by 3dB compared to baseline.  [Decibel (dB) is a
@@ -171,3 +170,4 @@ was very surprised that it was so stable and useful all the way up to
 Good enough for an evening playing around with a soldering iron and
 then doing measurements with a scope.  It was time to call it a night.
 
+Update: This article series is continued in [part&nbsp;3]({{site.baseurl}}/2016/03/16/ghz-differential-probe-3.html) 
