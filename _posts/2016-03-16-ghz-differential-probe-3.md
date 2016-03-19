@@ -29,7 +29,7 @@ source signal is affected by the ringing.  Scratch that idea.
 [![Measurement with 0Ω input resistors]({{site.baseurl}}/images/2016-03-16-ghz-differential-probe-3/measure-0.png)]({{site.baseurl}}/images/2016-03-16-ghz-differential-probe-3/measure-0.png)
 
 Next I tried a 100Ω resistor.  The lighter white trace is the signal
-out of the probe and it looks decent at 100MHz although.
+out of the probe and it looks decent at 100MHz.
 There's a bit of ringing, but not too bad.
 
 [![Measurement at 100MHz with 100Ω input resistors]({{site.baseurl}}/images/2016-03-16-ghz-differential-probe-3/measure-100-100.png)]({{site.baseurl}}/images/2016-03-16-ghz-differential-probe-3/measure-100-100.png)
@@ -41,11 +41,11 @@ unstable if the gain at high frequencies becomes too high.
 
 [![Measurement at 600MHz with 100Ω input resistors]({{site.baseurl}}/images/2016-03-16-ghz-differential-probe-3/measure-100-600.png)]({{site.baseurl}}/images/2016-03-16-ghz-differential-probe-3/measure-100-600.png)
 
-After some more testing, 120Ω, 220Ω and also with variying some other
-parameters I finally settled on 150Ω for R3 and R4 as a decent
-compromise between being happy with the bandwidth and not seeing too
-much ringing.  All other components have the original values from the
-simulation.
+After some more testing, trying 120Ω and 220Ω at the input and also
+variying some other parameters I finally settled on 150Ω for R3 and R4
+as a decent compromise between being happy with the bandwidth and not
+seeing too much ringing.  All other components have the original
+values from the simulation.
 
 At 100MHz the probe looks really good, it's even possible to se the
 little bump on top which I believe is due to impedance mismatch in the
@@ -66,7 +66,7 @@ good.
 At this stage I pestered a colleague into running the probe through a
 network analyzer to see how it would do.  It turns out that the
 frequency response is almost flat up to 300MHz, the -3dB point is at
-847MHz and the -6dB point is at 1.275&nbsp;GHz.
+850MHz and the -6dB point is at 1.275&nbsp;GHz.
 
 [![Probe schematics]({{site.baseurl}}/images/2016-03-16-ghz-differential-probe-3/bandwidth.png)]({{site.baseurl}}/images/2016-03-16-ghz-differential-probe-3/bandwidth.png)
 
