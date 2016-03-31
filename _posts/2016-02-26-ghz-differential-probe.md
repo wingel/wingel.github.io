@@ -5,6 +5,7 @@ date: '2016-02-26T12:00:00.000+01:00'
 tags:
 - nerdy stuff
 id: ad0bcfc2-89df-43fc-90bd-2c43fdc36de0
+modified_time: '2016-03-31T21:00:00+01:00'
 ---
 
 I wanted to probe a PCB at work to see how a ~500MHz differential
@@ -46,8 +47,8 @@ differential termination.
 The first stage is a pair of of OP-amps (U1, U2) in voltage-follower
 configuration.  I was a bit worried about oscillation so instead of
 connecting the voltage follower positive input and feedback directly
-I've added some inputs resistors (R2, R3) and feedback resistors (R4,
-R5) to avoid this.  VM1 and VM2 are measurement points that measure
+I've added some inputs resistors (R3, R4) and feedback resistors (R5,
+R6) to avoid this.  VM1 and VM2 are measurement points that measure
 the outputs of the OP-amps.
 
 The second stage is a differencing amplifier (U3) with a less than
