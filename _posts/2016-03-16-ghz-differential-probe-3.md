@@ -78,3 +78,6 @@ Mission completed.  I'm happy.
 If anyone is interested in my Eagle schematics or board files or just
 has any questions, don't hesitate to mail me.  Contact info can be
 found below.
+
+Update: I have published the eagle files for the probe on
+[GitHub](https://github.com/wingel/diff-probe).
