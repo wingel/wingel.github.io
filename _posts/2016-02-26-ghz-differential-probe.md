@@ -5,7 +5,7 @@ date: '2016-02-26T12:00:00.000+01:00'
 tags:
 - nerdy stuff
 id: ad0bcfc2-89df-43fc-90bd-2c43fdc36de0
-modified_time: '2016-03-31T21:30:00+01:00'
+modified_time: '2016-04-01T11:30:00+01:00'
 ---
 
 I wanted to probe a PCB at work to see how a ~500MHz differential
@@ -31,6 +31,10 @@ fairly familiar with it so a natural beginning was to try to simulate
 the circuit I had in mind in Tina.
 
 [![Probe schematics]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-schematic.png)]({{site.baseurl}}/images/2016-02-26-ghz-differential-probe/simulation-schematic.png)
+
+Update: An earlier version of this schematic showed the output of U3
+being grounded.  That was an error and the ground connection has been
+removed.
 
 As pointed out by [Elliot
 Williams](https://hackaday.com/author/hexagon5un/) this is fairly
