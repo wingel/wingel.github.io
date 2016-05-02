@@ -23,7 +23,7 @@ Jupyter](http://jupyter.org/).  Jupyter allows you to basically have a
 virtual notebook where you can enter text and calculations.  The
 killer though, is that you can enter code and do things such as plot
 the output from a function.  I abused this interface a bit to run my
-Python and now I can do things like this:
+Python code and now I can do things like this:
 
 [![Interactive measurements]({{site.baseurl}}/images/2016-04-07-playing-around-with-jupyter/interactive.gif)]({{site.baseurl}}/images/2016-04-07-playing-around-with-jupyter/interactive.gif)
 
