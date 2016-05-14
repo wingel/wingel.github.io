@@ -31,11 +31,11 @@ possible to put a minimal first stage bootloader there.
 The S3C2416 has 64k of internal RAM and some code in ROM that reads
 the first 8k the NAND flash into RAM and then starts executing it.
 This first stage bootloader usually performs some basic setup such as
-setting up a fixed GPIO configuration, initializes the DDR memory, and
-then load a bigger second stage bootloader from flash into DDR memory
-and jump to it.  The first stage bootloader should support ECC and
-simple flash page remapping so that it can work reliably with the
-limitations of NAND flash.
+a fixed GPIO configuration, DDR memory initialization.  It then loads
+a bigger second stage bootloader from flash into DDR memory and jumps
+to it.  The first stage bootloader should support ECC and simple flash
+page remapping so that it can work reliably with the limitations of
+NAND flash.
 
 The second stage bootloader is the what a user normally thinks of as
 the bootloader proper.  It usually has a command prompt which is
@@ -50,11 +50,11 @@ Flash contents
 The first thing I did when I managed to connect to the scope using
 JTAG was to make a complete dump of the flash contents.  The S3C2416
 loads the first stage bootloader from the first 8kBytes of flash so
-that was the first thing I wanted to look at.  The first 8kBytes
-contained some strings that matched what was seen on the serial port
-when the scope was powered o, and also some strings that hinted that
-it does some kind of memory initialization and memory test.  Good, it
-seems to do what I expected it to do.
+that was what I wanted to look at.  I found some strings that matched
+what was seen on the serial port when the scope was powered on, and
+some other strings that hinted that it does some kind of memory
+initialization and memory test.  Good, it seems to do what I expected
+it to do.
 
     00000a30  30 31 32 33 34 35 36 37  38 39 41 42 43 44 45 46  |0123456789ABCDEF|
     00000a40  4c 49 4c 4c 49 50 55 54  0d 0a 00 44 53 4f 20 54  |LILLIPUT...DSO T|
