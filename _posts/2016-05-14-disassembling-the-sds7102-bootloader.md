@@ -258,5 +258,5 @@ This was a start though.  I had gotten a feel for how the bootloader
 worked and where to look if I needed more information.  And I had
 gotten a bit familiar with Medusa which was good.
 
-Time to take a look at the file system, but that's something for [next
-time]({{site.baseurl}}/2016/05/15/sds7102-file-system.html).
+Time to take a look at the file system, but that's something for next
+time.
