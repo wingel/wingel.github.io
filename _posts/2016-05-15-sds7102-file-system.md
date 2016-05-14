@@ -391,17 +391,18 @@ files if the file system becomes full.
 
 That's OK with me, if they only need a set of static files they don't
 need more.  But what is more worrying is that I don't consider this
-file systems as especially secure.  As I wrote in my previous post,
-NAND is unreliable.  NAND flash _will_ develop spontaneous bit errors
-over time, even if it just sits there without being written.  One
-needs error correction to be able to compensate for this.
+file systems as especially secure against corruption.  As I wrote in
+my previous post, NAND is unreliable.  NAND flash _will_ develop
+spontaneous bit errors over time, even if it just sits there without
+being written.  One needs error correction to be able to compensate
+for this.
 
 This file system has no error correction at all.  Since they have left
 20 bytes as zeroes out of every page in a file, I guess they were
 planning to stick some kind of error correcting codes (ECC) in there
 but never got around to it.  And sticking the error correction codes
 in the data itself is kind of dumb since the NAND flash they are using
-has 64 bytes of "OOB" data associated with every page which is
+has 64 bytes of "OOB" data associated with every page and which is
 specifically intended for error correcting codes.  I have later dumped
 the OOB data from Linux and it's also unused and all zeroes.
 
