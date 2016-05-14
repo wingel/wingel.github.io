@@ -3,6 +3,7 @@ layout: post
 title: Disassembling the SDS7102 bootloader
 tags:
 - nerdy stuff
+- sds7102
 id: 5e6de831-75cb-4369-9ac9-3af4ee066320
 ---
 
@@ -182,7 +183,7 @@ that talked to the DDR memory controller, some code that talked to the
 coprocessor that Medusa failed to disassemble correctly and after that
 some code that talked to the NAND flash controller.
 
-![Scope]({{site.baseurl}}/images/2016-05-14-disassembling-the-sds7102-bootloader/medusa-ddr-init.png)
+![DDR Initialization Dissasembly]({{site.baseurl}}/images/2016-05-14-disassembling-the-sds7102-bootloader/medusa-ddr-init.png)
 
 I didn't look very closely at the code, I sort of knew what is was
 supposed to do and most of the details weren't that important.  What I
@@ -194,7 +195,7 @@ address 0x30000000 which is the start of DDR memory.  It then copied
 about 70kBytes from offset 0xac4 to address 0x33c00000, the last
 512kBytes of DDR memory and which then jumped into that code:
 
-![Scope]({{site.baseurl}}/images/2016-05-14-disassembling-the-sds7102-bootloader/medusa-jump-to-ddr.png)
+![Jump to DDR Dissasembly]({{site.baseurl}}/images/2016-05-14-disassembling-the-sds7102-bootloader/medusa-jump-to-ddr.png)
 
 Second Stage
 ============
@@ -235,7 +236,7 @@ if that also failed.  So yes, this was probably the part that loaded
 the operating system and then verified a checksum to see that the file
 was not corrupt.
 
-![Scope]({{site.baseurl}}/images/2016-05-14-disassembling-the-sds7102-bootloader/medusa-os-load.png)
+![OS Load Disassembly]({{site.baseurl}}/images/2016-05-14-disassembling-the-sds7102-bootloader/medusa-os-load.png)
 
 I looked but could not find any way of getting to a command prompt.
 My guess is that they have disabled all of that for the production
@@ -257,5 +258,5 @@ This was a start though.  I had gotten a feel for how the bootloader
 worked and where to look if I needed more information.  And I had
 gotten a bit familiar with Medusa which was good.
 
-Time to take a look at the file system, but that's something for next
-time.
+Time to take a look at the file system, but that's something for [next
+time]({{site.baseurl}}/2016/05/15/sds7102-file-system.html).
