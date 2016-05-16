@@ -470,4 +470,4 @@ my own FPGA code and firmware from scratch.  So I'll mostly use the
 disassembly to figure out how the hardware works and ignore the rest
 of what the current operating system is doing.
 
-But I'll save that for another post.
+But I'll save that for another [post]({{site.baseurl}}/2016/05/16/sds7102-os-disassembly.html).
