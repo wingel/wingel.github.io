@@ -232,7 +232,7 @@ U38 is an [Atmel AT88SC0104CRF
 "CryptoMemory"](http://www.atmel.com/devices/at88sc0104ca.aspx),
 basically an I2C memory with encryption.  It doesn't have anything to
 do with signal processing but it sits next to the FPGA.  It probably
-stores the serial number in an encrypted formats which is used for
+stores the serial number in an encrypted format which is used for
 some kind of copy protection.  I have not figured out how to talk to
 this chip yet, and even if I do, the contents are encrypted which
 means I won't be able to do anything with the information.
