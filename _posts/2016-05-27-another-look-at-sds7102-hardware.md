@@ -141,7 +141,7 @@ levels instead of 3.3V, but I'm not sure.
 
 U58 is a mystery component, I can't even decipher the markings on it.
 It seems to be connected to a large inductor (L1) next to it, so my
-guess is that it is some kind of power supply and hopefully id doesn't
+guess is that it is some kind of power supply and hopefully it won't
 need any configuration.
 
 U12 is the connector for the front panel with all the buttons and
@@ -190,19 +190,18 @@ ADC08D500](http://www.ti.com/product/ADC08D500) which can sample two
 channels at 500Msamples/second with 8 bits of resolution.  It can also
 combine the two channels into one channel which can be sampled at
 1Gsamples/second.  The footprint on the PCB is a bit strange,
-apparently there's a chinese clone of the ADC08D500 called
-[MXT2000](http://www.mxtronics.com/n107/n123/c882/attr/2737.pdf) which has a
-few extra unused pins but which is otherwise compatible.
+apparently it's prepared for a chinese clone of the ADC08D500 called
+[MXT2000](http://www.mxtronics.com/n107/n123/c882/attr/2737.pdf) which
+has a few extra unused pins but which is otherwise compatible.
 
-The ADC uses a SPI bus for control and I need to
-figure out where its CS/CLK/DIN pins are connected.  It's possible to
-see a lot of differential traces from the ADC to FPGA which are
-probably the sampling clock and digital data and I need to figure out
-how the digital sample outputs are connected to the FPGA.  That ought
-to be fairly easy as soon as I have managed to talk to the ADC over
-SPI and set up a known configuration.  There might also be some other
-pins that are interesting such as the RST or CAL inputs or the
-over-range output.y
+The ADC uses a SPI bus for control and I need to figure out where its
+CS/CLK/DIN pins are connected.  It's possible to see a lot of
+differential traces going from the ADC to the FPGA.  These are
+probably the sampling clock and digital data.  I need to figure out
+how the they are connected to the FPGA.  That ought to be fairly easy
+as soon as I have managed to talk to the ADC over SPI and set up a
+known configuration.  There might also be some other pins that are
+interesting such as the RST or CAL inputs or the over-range output.y
 
 U97 is an [ADF4360-7 "Integrated Synthesizer and
 VCO"](http://www.analog.com/en/products/rf-microwave/pll-synth/adf4360-7.html).
@@ -236,8 +235,8 @@ basically an I2C memory with encryption.  It doesn't have anything to
 do with signal processing but it sits next to the FPGA.  It probably
 stores the serial number in an encrypted formats which is used for
 some kind of copy protection.  I have not figured out how to talk to
-this chip yet, and even if I do the contents are encrypted which means
-I probably won't be able to do anything with the information anyway.
+this chip yet, and even if I do, the contents are encrypted which
+means I won't be able to do anything with the information.
 
 There are a few more resistor packs to the right of the FPGA which are
 probably used for the bus to the the SoC.
