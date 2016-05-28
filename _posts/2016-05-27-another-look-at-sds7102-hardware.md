@@ -322,7 +322,7 @@ developed with video applications in mind.  They are probably used to
 select which signal should be fed to the trigger circuit above but I'm
 not sure.  There are couple of digital inputs on each mux: address
 pins A0, A1 which select an input, a shutdown signal (SD) and an
-enable signal /(EN).  As usual I need to figure out where these pins
+enable signal (/EN).  As usual I need to figure out where these pins
 are connected.
 
 U3 is an [Analog Devices AD706 "Dual Picoampere Input Current Bipolar
@@ -387,12 +387,10 @@ ethernet.
 
 ![Front block diagram]({{site.baseurl}}/images/2016-05-27-another-look-at-sds7102-hardware/main-front-block.jpg)
 
-The front contains the trigger logic and a multi channel voltage
-reference for the AFE.  There are some connectors for the LCD display
-and front panel and some miscellaneous chips such as power supplies,
-the crypto memory, drivers for the VGA output.
+The front of the main board contains the trigger logic and a multi
+channel voltage reference for the AFE.  There are some connectors for
+the LCD display and front panel and some miscellaneous chips such as
+power supplies, the crypto memory, and drivers for the VGA output.
 
 There's nothing that's all that hard here in principle.  But there are
 a lot of details that must be right for the whole system to work.
-
-I just wonder when I'll have time to do more hacking on the scope again.
