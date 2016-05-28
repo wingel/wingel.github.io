@@ -151,8 +151,7 @@ it is wired up.
 As I said, all of this makes up a small embedded ARM computer and
 except for the VGA controller and the front panel everything works
 just fine with Linux.  I had to add some ugly hacks to the USB device
-driver to make it work, but it really wasn't that hard to get
-everything to work.
+driver, but it really wasn't that hard to get everything to work.
 
 Signal Processing
 =================
@@ -168,7 +167,7 @@ from the FPGA and show them on the screen.
 ![Signal processing components on the back]({{site.baseurl}}/images/2016-05-27-another-look-at-sds7102-hardware/main-back-fpga.jpg)
 
 U2 is the FPGA, a [Xilinx Spartan 6 SC6SLX9](http://www.xilinx.com/products/silicon-devices/fpga/spartan-6.html).  I have figured out how to
-configure the FPGA using the Xilinx Salve Serial mode.  GPK3, GPK5,
+configure the FPGA using the Xilinx Slave Serial mode.  GPK3, GPK5,
 GPK7, GPK11 and GPK13 on the Soc are connected to CCLK, DONE, PROG_B,
 DIN and INIT_B on the FPGA.
 
