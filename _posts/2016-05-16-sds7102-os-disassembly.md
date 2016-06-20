@@ -318,4 +318,4 @@ discover anything that way, but I'm afraid that I'll have to crack the
 scope open again pretty soon and start probing pins on the PCB to find
 out more.
 
-Until next time.
+Until [next time]({{site.baseurl}}/2016/05/27/another-look-at-sds7102-hardware.html).
