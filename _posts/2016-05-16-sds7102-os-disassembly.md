@@ -4,6 +4,10 @@ title: SDS7102 OS Disassembly
 tags:
 - nerdy stuff
 - sds7102
+excerpt:
+  A series of posts about reverse engineering the OWON SDS7102 oscilloscope.
+  <br>
+  This post talks about disassembling the original firmware on the scope.
 id: 42329e2c-7753-4367-a4b4-d2bcf3683f47
 ---
 

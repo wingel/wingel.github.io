@@ -4,6 +4,12 @@ title: Another look at the hardware in the SDS7102
 tags:
 - nerdy stuff
 - sds7102
+excerpt:
+  A series of posts about reverse engineering the OWON SDS7102 oscilloscope.
+  <br>
+  This post talks about all the things I've discovered about the
+  hardware in the scope so far.  This is the post to read if you
+  want to see how everything in the scope fits together.
 id: 936bd5a6-1c14-4bd5-9379-0f70e1ca7b36
 ---
 

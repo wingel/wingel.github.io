@@ -4,6 +4,10 @@ title: Disassembling the SDS7102 bootloader
 tags:
 - nerdy stuff
 - sds7102
+excerpt:
+  A series of posts about reverse engineering the OWON SDS7102 oscilloscope.
+  <br>
+  This post talks about disassembling the bootloader on the scope.
 id: 5e6de831-75cb-4369-9ac9-3af4ee066320
 ---
 

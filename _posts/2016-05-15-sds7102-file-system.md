@@ -4,6 +4,10 @@ title: The SDS7102 File System
 tags:
 - nerdy stuff
 - sds7102
+excerpt:
+  A series of posts about reverse engineering the OWON SDS7102 oscilloscope.
+  <br>
+  This post talks about reverse engineering the file system on the scope.
 id: 5e6de831-75cb-4369-9ac9-3af4ee066320
 ---
 

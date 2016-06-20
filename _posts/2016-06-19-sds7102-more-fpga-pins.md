@@ -7,6 +7,11 @@ tags:
 - fpga
 - myhdl
 - rhea
+excerpt:
+  A series of posts about reverse engineering the OWON SDS7102 oscilloscope.
+  <br>
+  This post talks about finding the remaining pins of the FPGA.
+  And a call for help.
 id: bd2a1dec-ed9c-4330-a989-d4143b44f1b2
 ---
 
