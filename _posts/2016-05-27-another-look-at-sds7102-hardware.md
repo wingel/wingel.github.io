@@ -394,3 +394,5 @@ power supplies, the crypto memory, and drivers for the VGA output.
 
 There's nothing that's all that hard here in principle.  But there are
 a lot of details that must be right for the whole system to work.
+
+Update: [This series is continued here]({{site.baseurl}}/2016/05/28/sds7102-gio-pins.html)
