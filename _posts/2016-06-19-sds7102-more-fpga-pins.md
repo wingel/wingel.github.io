@@ -100,7 +100,7 @@ so I added those pins to my pin map.
 ![DDR bus pins]({{site.baseurl}}/images/2016-06-19-sds7102-more-fpga-pins/ddr.png)
 
 The DDR memory is located just above the FPGA so the physical PCB
-layout makes sense here too.  The I/O standard is SSTL 1.8V here too
+layout makes sense here too.  Once again the I/O standard is SSTL 1.8V
 so the VREF pins are used for a 0.9V reference voltage.
 
 So far so good, but I do have a bit of a problem here.
@@ -141,9 +141,11 @@ the frequencies came in pairs and that there were 32 of them.  Well,
 that's exactly what I'd expect since the ADC has 32 differential data
 outputs (2 channels with 2x8 bits each).
 
-This is just too easy.
-
 ![ADC bus pins]({{site.baseurl}}/images/2016-06-19-sds7102-more-fpga-pins/adc.png)
+
+The ADC is physically located below the FPGA so that also makes sense.
+
+This is all too easy.
 
 The frequency on the differential pair at E7 and E8 that was toggling
 even with the ADC off was most probably the sampling clock output from
