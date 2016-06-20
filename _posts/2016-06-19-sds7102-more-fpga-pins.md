@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finding more SDS7102 FPGA pins
+title: More SDS7102 FPGA pins
 tags:
 - nerdy stuff
 - sds7102
@@ -91,7 +91,7 @@ them out yet.
 The DDR bus
 ===========
 
-The FPGA has it's own DDR memory.  I'm hoping that the OWON hardware
+The FPGA has its own DDR memory.  I'm hoping that the OWON hardware
 designers use the same pinout as Xilinx does in their [MIG - Memory
 Interface Generator
 (UG388)](http://www.xilinx.com/support/documentation/user_guides/ug388.pdf),
