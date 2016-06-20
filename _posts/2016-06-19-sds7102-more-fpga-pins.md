@@ -155,9 +155,8 @@ the frequency had changed.  I'm pretty convinced that it is the
 sampling clock.
 
 When I later poked at some pins of the ADC I also managed to make pins
-F13 and F14 toggle.  I'm not sure exactly what they do, but I've also
-marked those as ADC pins in the pin map.  They might be the overrange
-and CalRun outputs from the ADC.
+F13 and F14 toggle.  I'm not sure exactly what they do.  They might be
+the overrange and CalRun outputs from the ADC.
 
 I don't know exactly which differential pairs on the FPGA map to the
 data outputs from the ADC but that shouldn't be too hard to figure
