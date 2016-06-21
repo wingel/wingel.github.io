@@ -252,7 +252,7 @@ With all these pins filled in, here's the pin map.
 
 As you can see there are a dozen I/O pins left on the FPGA that I
 haven't found yet.  Some will turn out to be triggers.  Some may be
-ADC signaler.  Some may be unused.
+ADC signals.  Some may be unused.
 
 Other than that I actually think that I have mapped out just about
 every connection in the scope.  I know how the SoC is connected to all
