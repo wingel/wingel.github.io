@@ -287,6 +287,8 @@ like to help out, or just is interested, I could clean up the things
 I've done so far and upload everything to a GitHub repository.  If I'm
 too slow at doing this, send me a mail and remind me.
 
-Until next time.  Update.  I lied.  I had some more notes lying around
-with enough material for more
-[post]({{site.baseurl}}/2016/06/21/sds7102-front-panel.html).
+Until next time.
+
+Update: I lied.  I had enough material for one more
+[post]({{site.baseurl}}/2016/06/21/sds7102-front-panel.html) left in
+my notes.
