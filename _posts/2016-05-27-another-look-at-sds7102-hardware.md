@@ -22,14 +22,15 @@ of hacking on the scope.  This is a write-up of stuff I did quite some
 time ago so I hope I haven't forgotten anything important.
 
 Except for soldering some wires to the JTAG and serial port on the
-scope, most of the things I have discoveries about the SDS7102 I have
-made so far has been done with just software and a bit of thinking.
+scope, most of the discoveries about the SDS7102 I have made so far
+has been done with just software and a bit of thinking.  But I was
+running out of things I could find out this way.
 
-To get further it was time to crack the scope open again and take
-another look at the hardware.  I also desoldered the shield covering
-the analog frontend (AFE) so that I could see what was hidden behind
-it.  Here are two photos of the front and back of the main circuit
-board (click on the images for lager versions).
+To be able to find out more it was time to crack the scope open again
+and take another look at the hardware.  I also desoldered the shield
+covering the analog frontend (AFE) so that I could see what was hidden
+behind it.  Here are two photos of the front and back of the main
+circuit board (click on the images for lager versions).
 
 [![Front of main PCB]({{site.baseurl}}/images/2016-05-27-another-look-at-sds7102-hardware/main-front.jpg)]({{site.baseurl}}/images/2016-05-27-another-look-at-sds7102-hardware/main-front-large.jpg)
 
@@ -343,7 +344,7 @@ pins.  Two traces head upwards which might be two analog signals or
 two digital control signals.  Hopefully they are analog signals but I
 don't know yet.
 
-UD is a Rhom BU2506FV "10bit 8ch D/A
+UD is a [Rhom BU2506FV "10bit 8ch D/A
 converter"](http://www.rohm.com/web/global/products/-/product/BU2506FV).
 It is a multi channel digital to analog converter (DAC).  It's
 probably used to provide the voltages used to shift the levels of the
