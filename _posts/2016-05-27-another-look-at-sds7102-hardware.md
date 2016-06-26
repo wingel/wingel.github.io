@@ -344,7 +344,7 @@ pins.  Two traces head upwards which might be two analog signals or
 two digital control signals.  Hopefully they are analog signals but I
 don't know yet.
 
-UD is a [Rhom BU2506FV "10bit 8ch D/A
+UD is a [Rohm BU2506FV "10bit 8ch D/A
 converter"](http://www.rohm.com/web/global/products/-/product/BU2506FV).
 It is a multi channel digital to analog converter (DAC).  It's
 probably used to provide the voltages used to shift the levels of the
