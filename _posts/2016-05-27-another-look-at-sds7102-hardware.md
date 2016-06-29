@@ -207,7 +207,7 @@ probably the sampling clock and digital data.  I need to figure out
 how the they are connected to the FPGA.  That ought to be fairly easy
 as soon as I have managed to talk to the ADC over SPI and set up a
 known configuration.  There might also be some other pins that are
-interesting such as the RST or CAL inputs or the over-range output.y
+interesting such as the RST or CAL inputs or the over-range output.
 
 U97 is an [ADF4360-7 "Integrated Synthesizer and
 VCO"](http://www.analog.com/en/products/rf-microwave/pll-synth/adf4360-7.html).
@@ -282,7 +282,7 @@ the probe input will pass through the capacitor next to it and the
 signal will be AC coupled.  If the relay is active it shorts out the
 capacitor and the input will become DC coupled.  This relay probably
 needs some kind of drive circuit which is then connected to an I/O pin
-on the SoC or the FPGA.  Since some the relays click when I toggle
+on the SoC or the FPGA.  Since some of the relays click when I toggle
 GPIO pins on the SoC I would also guess that the solid state relays
 are controlled from the SoC.
 
@@ -303,7 +303,7 @@ Amplifiers"](http://www.ti.com/product/LMH6518), one per channel.
 They are configured via a SPI bus.  I need to figure out where these
 pins, chip select/latch enable, clock and data in are connected.
 
-Next to the external trigger input there is more OP Amp, U36 and one
+Next to the external trigger input there is one more OP Amp, U36 and one
 more mechanical relay KA.  I don't know exactly what they do.  First I
 want to figure out how the relay is controlled and later I can try to
 figure out how it works.
