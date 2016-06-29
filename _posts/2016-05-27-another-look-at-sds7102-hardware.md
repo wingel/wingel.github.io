@@ -30,7 +30,7 @@ To be able to find out more it was time to crack the scope open again
 and take another look at the hardware.  I also desoldered the shield
 covering the analog frontend (AFE) so that I could see what was hidden
 behind it.  Here are two photos of the front and back of the main
-circuit board (click on the images for lager versions).
+circuit board (click on the images for larger versions).
 
 [![Front of main PCB]({{site.baseurl}}/images/2016-05-27-another-look-at-sds7102-hardware/main-front.jpg)]({{site.baseurl}}/images/2016-05-27-another-look-at-sds7102-hardware/main-front-large.jpg)
 
