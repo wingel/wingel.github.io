@@ -196,9 +196,11 @@ Pin A7 is the chip select (CS) pin on the LMH6518 for channel 1.
 
 Pin C8 is the chip select (CS) pin on the LMH6518 for channel 2.
 
-Pin F7 is the load (LD) pin on the Rohm DAC.  (Update: I had made a
+Pin F7 is the load (LD) pin on the Rohm DAC.  Update: I had made a
 mistake in my pin diagram and used to think E6 was connected to the
-DAC).
+DAC, this was wrong, F7 is the correect pin.
+
+Update: I have later found out that pin A8 is connected to the TI DAC.
 
 Pin C7 is the latch enable (LE) pin on the ADF4360-7 clock generator.
 

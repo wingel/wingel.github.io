@@ -342,7 +342,10 @@ it so I probably won't have to care.
 I have been unable to identify U16.  It is marked D32E 2276 and has 8
 pins.  Two traces head upwards which might be two analog signals or
 two digital control signals.  Hopefully they are analog signals but I
-don't know yet.
+don't know yet.  Update: U16 is a [Texas Instruments DAC8532 16-Bit,
+Dual Channel, Low Power DAC](http://www.ti.com/product/DAC8532).  This
+means that the voltages used to shift the level of the two input
+channels come from this DAC instead of from the Rohm DAC below.
 
 UD is a [Rohm BU2506FV "10bit 8ch D/A
 converter"](http://www.rohm.com/web/global/products/-/product/BU2506FV).
