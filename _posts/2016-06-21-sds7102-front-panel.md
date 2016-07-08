@@ -107,3 +107,6 @@ prefer not to do, but I bet that's it.  I guess someone at OWON had
 plans for adding an infared remote control to the scope but that the
 plans were scrapped and they just decided to just not mount the
 components for it.
+
+Update: A new [post]({{site.baseurl}}/2016/07/08/sds7102-capture.html) is up.
+ 
