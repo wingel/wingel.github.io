@@ -363,7 +363,7 @@ There are some "latch enable" pins that might be controlled by the
 FPGA.
 
 U34 och U35 are marked 7046 3105.  My guess is a [Rohm BA7046 "SYNC
-separator IC with AFC"](www.promelec.ru/pdf/BA7046[F].pdf).  If that
+separator IC with AFC"](http://www.promelec.ru/pdf/BA7046[F].pdf).  If that
 is correct I think they are used to trigger on PAL/NTSC video signals.
 I would have guessed that something like that would be done in the
 FPGA, but I suppose it might be better to do it with dedicated
