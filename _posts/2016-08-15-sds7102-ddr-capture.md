@@ -77,14 +77,14 @@ and have offset the channels by 50µs in post-processing to make them
 easier to tell apart.
 
 As you can see I've tried to make the signals look a bit "analog".  On
-an analog scope a steady signal will illuminate the phosphor for a
-longer time and make the phosphor in that location brighter.  A faster
-changing signal will illuminate the phosphor in each spot for a
-shorter time and the phosphor won't be as bright.
+an analog scope a steady signal will stay in place and illuminate the
+phosphor for a longer time and make the phosphor in that location
+brighter.  A faster changing signal will illuminate the phosphor in
+each spot for a shorter time and the phosphor won't be as bright.
 
 Each pixel in this graph represents 1000 samples which are weighted
 together to decide the intensity of each pixel.  If you look at the
-rising edge of the red signal is brighter at the top where it's
+rising edge of the green signal it is brighter at the top where it's
 changing more slowly.  The falling green edge and the red edges are
 changing a lot faster and are also less bright.
 
@@ -92,18 +92,18 @@ The size of the graph is 400x256 pixels.  My thought is that if I
 scale this image to 800x512 pixels it should fit perfectly on the
 800x600 screen of the oscilloscope, leaving 88 pixels at the bottom
 and the top of the screen for the user interface.  The weighting
-algorithm doesn't try to be accurate and match phosphor in any real
-sense, I'm only trying to make it "look good" and provide some useful
-information.
+algorithm doesn't try to be accurate and match the behavior of
+phosphor in any real sense, I'm only trying to make it "look good" and
+provide some useful information.
 
-I can take the same captured and zoom in a bit and show 1µs (4000
-samples) worth data:
+I can take the same captured waveform and zoom in a bit and show 1µs
+(4000 samples) worth of data:
 
 [![1µs of data (4000 samples)]({{site.baseurl}}/images/2016-08-15-sds7102-ddr-capture/samples-4000.png)]({{site.baseurl}}/images/2016-08-15-sds7102-ddr-capture/samples-4000.png)
 
 Each pixel represents only 10 samples and the weighting algorithm
-doesn't can't do as much with the intensity anymore.  It's possible to
-see that there's some kind of ringing or noise at the bottom of each
+can't do as much with the intensity anymore.  It's possible to see
+that there's some kind of ringing or noise at the bottom of each
 falling edge though.
 
 This is a graph at maximum zoom with 100ns (400 samples) worth of
