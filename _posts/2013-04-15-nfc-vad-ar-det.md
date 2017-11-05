@@ -24,7 +24,7 @@ kommunikation med beröringsfria kort:
 
 NfcA - ISO 14443 Type A.  En radiokodningsstandard för hur man skickar
 data på 13.56MHz och som brukar användas för beröringsfria kort.
-Längsta avstånd mellan läsare och kort brukar vara kring 5-10c och man
+Längsta avstånd mellan läsare och kort brukar vara kring 5-10cm och man
 kan få en överföringshastighet på några hundra kilobit/sekund.  Mifare
 är baserat på 14443 Type A.  Jag jobbat en hel del med Mifare som
 används i passersystem.  Mifare används också i en en massa
