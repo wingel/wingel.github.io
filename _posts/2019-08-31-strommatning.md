@@ -12,24 +12,24 @@ Ja, tja, jag har till och från jobbat med små batteridrivna prylar.
 En fråga jag alltid fått från chefen är "hur ofta behöver man byta
 batterier?"  Det är rätt viktigt att veta en sån sak.  Om en pryl kan
 klara sig på ett knappcellsbatteri i ett par år så är det jättebra, om
-man måste ha ett 4 AA-batterier som behöver byutas varannan månad så
+man måste ha 4 AA-batterier som behöver bytas varannan månad så
 sabbar det lätt kundens upplevelse av produkten.  Och det är en
 jättesvår fråga att svara på.
 
 För en ficklampa är det inte så svårt, den drar ingenting när den är
-avstängd och lysdioderna sen behöver 100mA när lampan är tänd så kan
-man lätt räkna ut att man får ungefär 8 timmars batteritid med ett
-batteri på 800mAh.  Eller så har man i varje fall en någorlunda enkel
-och jämn urladdningskurva som man kan räkna på.
+avstängd och om lysdioderna sen behöver 100mA när lampan är tänd så
+kan man rätt lätt räkna ut att man får ungefär 8 timmars batteritid
+med ett batteri på 800mAh.  Eller så har man i varje fall en
+någorlunda enkel och jämn urladdningskurva som man kan räkna på.
 
 En IoT-pryl brukar ha ett mycket mer dynamiskt beteende.  Prylen är
 för det mesta i sleep mode och drar några microampere.  Sen vaknar den
 till liv och då drar CPUn ett par milliampere.  Sen drar igång radion
-för mottagning och då drar den ytterligare tio 10 under 50
+för mottagning och då drar den ytterligare 10mA under 50
 milllisekunder medans den sitter där och lyssnar.  Om den behöver
 svara så måste den även sända och då går strömförbrukningen upp till
-20 milliampere under 3 millisekunder.  Har prylen en lysdiod som
-blinkar till så kanske det drar 1mA under 100ms.  Osv.
+20mA under 3 millisekunder.  Har prylen en lysdiod som blinkar till så
+kanske det drar 1mA under 100ms.  Osv.
 
 En pryl som uCurrent är nästan oanvändbar för sånt här, om man ställer
 in skalan på den så man kan mäta strömförbrukningen i sleep mode så
@@ -48,8 +48,8 @@ där man t.ex. kan säga åt den att slå på radion i mottagningsläge och
 sen hänga där.  Då kan man mäta strömförbrukningen med en noggrann
 multimeter och sen titta på hur länge prylen är i respektive läge med
 ett oscilloskop.  Sen är det bara att ta mätningarna för varje läge
-och räkna ut ampereekunder=ampere*sekunder och summera ihop dem.  Det
-är jobbigt och tråkigt men det fungerar någorlunda bra.  Fast med
+och räkna ut amperetimmar=ampere*sekunder/3600 och summera ihop dem.
+Det är jobbigt och tråkigt men det fungerar någorlunda bra.  Fast med
 moderna IoT-prylar med bluetooth low energy som växlar mellan flera
 olika strömsparlägen och där man inte kommer åt testmoderna så blir
 det jobbigare och jobbigare att göra sånt här för hand.
@@ -63,9 +63,9 @@ någon millisekunds upplösning så att man kan se strömförbrukningen
 över tid?
 
 En modern multimeter som en Keithley DMM6500 för 10000 kronor kan
-logga mätningar över tid så den kanske kunna göra allt det där, men
-det är rätt mycket pengar för ett mätinstrument.  Jag vet inte heller
-om den klarar av att växla mellan mätområden snabbt nog.
+logga mätningar över tid så den kanske skulle kunna göra allt det där,
+men det är rätt mycket pengar för ett mätinstrument.  Jag vet inte
+heller om den klarar av att växla mellan mätområden snabbt nog.
 
 Jag har i varje fall skissat och funderat på en sån här mätpryl till
 och från i flera år.  Jag har läst på om hur en transimpedance
@@ -109,7 +109,7 @@ skulle göra samma mätning en gång till så lär jag få en helt annan
 kurva för att det är så mycket brus och mätvärdena driver fram och
 tillbaka.
 
-![png]({{site.baseurl}}/images/2019-08-31/m1.png)
+![png]({{ "images/2019-08-31-strommatning/m1.png" | relative_url }})
 
 Svep från -100nA till +100nA i steg om 10nA.  Mycket bättre.  Det
 finns ett litet gain-fel, om man tittar på Y-axeln så rapporterar
@@ -121,7 +121,7 @@ vad den borde.)  Men utöver det så ser det ju jättebra ut.
 I verkligheten så har utsignalen en DC-offset på ungefär 13uV som jag
 räknat bort innan jag översatt utspänningen i volt till ampere.
 
-![png]({{site.baseurl}}/images/2019-08-31/m2.png)
+![png]({{ "images/2019-08-31-strommatning/m2.png" | relative_url }})
 
 Svep från -1µA till +1µA i steg om 100nA.  Rakt och fint och inget
 märkbart gain-fel.  Den röda linjen är alltså från
@@ -129,7 +129,7 @@ transimpedance-amplifiern som mäter små strömmar.  Den gröna linjen är
 mätvärdet från shunt-resistorn, men det är bara bruset som syns vid så
 låga strömmar.
 
-![png]({{site.baseurl}}/images/2019-08-31/m3.png)
+![png]({{ "images/2019-08-31-strommatning/m3.png" | relative_url }})
 
 Svep från -10µA till +10µA i steg om 1µA. Inga konstigheter. Den röda
 linjen från transimpedance amplifiern ser bra ut. Den gröna linjen
@@ -138,7 +138,7 @@ skräp.
 
 Fonten som används i skalan är trasig, fyrkanten borde vara "µ".
 
-![png]({{site.baseurl}}/images/2019-08-31/m4.png)
+![png]({{ "images/2019-08-31-strommatning/m4.png" | relative_url }})
 
 Svep från -100µA till +100µA. Nu kommer man till området där
 mätningarna från shunt-resistorn börjar bli användbara. Mätvärdena är
@@ -146,7 +146,7 @@ fortfarande brusiga och det finns en offset men det är nästan
 användbart. Mätningarna från transimpedance amplifiern ser fortfarande
 bra ut.
 
-![png]({{site.baseurl}}/images/2019-08-31/m5.png)
+![png]({{ "images/2019-08-31-strommatning/m5.png" | relative_url }})
 
 Svep från -1mA till +1mA. Här tog transimpedance-amplifierns mätområde
 slut. Den förstärker med 10000V/A och utspänningen kan variera mellan
@@ -154,7 +154,7 @@ ungefär +/-3.5V vilket gör att den bara är linjär upp till ungefär
 +/-300µA. Men här börjar ju mätnignarna från shunt-resistorn vara bra
 nog att ta över.
 
-![png]({{site.baseurl}}/images/2019-08-31/m6.png)
+![png]({{ "images/2019-08-31-strommatning/m6.png" | relative_url }})
 
 Svep från -10mA till +10mA. Inga konstigheter här heller. Mätvärdet
 från transimpedance amplifiern är oanvändbart vid de här strömmarna
@@ -165,12 +165,12 @@ Tyvärr så lyckades jag inte få med burden voltage i mätningarna jag
 gjorde innan jag smet från verkstan igår, men om jag minns rätt så
 ligger den fortfarande på enstaka millivolt här.
 
-![png]({{site.baseurl}}/images/2019-08-31/m7.png)
+![png]({{ "images/2019-08-31-strommatning/m7.png" | relative_url }})
 
 Svep från -100mA till +100mA. Nånstans här så har MOSFETen slagt till
 och kortslutit transimpedance amplifiern.
 
-![png]({{site.baseurl}}/images/2019-08-31/m8.png)
+![png]({{ "images/2019-08-31-strommatning/m8.png" | relative_url }})
 
 Svep från -1A till +1A. Inga konstigheter.
 
@@ -180,7 +180,7 @@ leverera ett vettigt mätvärde upp till +/-3A och att burden voltage
 ligger kring +/-30mV då. Vid +/-5A så får man inte ut några vettiga
 mätvärden längre, men burden voltage höll sig kring +/-50mV.
 
-![png]({{site.baseurl}}/images/2019-08-31/m9.png)
+![png]({{ "images/2019-08-31-strommatning/m9.png" | relative_url }})
 
 Så, tja, själva biten som tar en ström in och levererar en spänning ut
 på två områden verkar ju fungera. Nu är det bara resten kvar.
