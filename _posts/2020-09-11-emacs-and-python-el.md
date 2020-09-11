@@ -37,14 +37,14 @@ State stays between runs.  If I do:
 
 and modify module.py, those changes won't be picked up again unless I
 kill the long running process and start it again.  Or I reload the
-module by hand, but that's quickly becomes unworkable if the module is
+module by hand, but that quickly becomes unworkable if the module is
 used in multiple places.  When I press C-c C-c to run my Python code I
 want to start from a clean predictable slate.  I want a new fresh
 instance of Python running in an empty buffer every time.  This way I
-will know that there isn't any state left over from previous runts.
+will know that there isn't any state left over from previous runs.
 
-And, as a bonus, python.el silently strips out any code inside a block
-like this:
+And, as a nice surprise, python.el silently strips out any code inside
+a block like this:
 
     if __name__ == '__main__':
         main()
@@ -52,8 +52,8 @@ like this:
 That made me quite confused the first time I tried to run a Python
 program from within Emacs and nothing happened.  I ended up running it
 from the command line instead.  When I got frustrated enough I started
-digging into what was happened, decided that python.el was crap and
-went back to python-mode.el again.
+digging into it and figured out what had happened.  I decided that
+python.el was crap and went back to python-mode.el again.
 
 But now I have a machine with a new shiny Emacs 25 on it and my old
 trust python-mode.el finally broke in such a way that I couldn't fix
@@ -63,7 +63,7 @@ people on the internet have done and copying snippets into my .emacs.
 
 But this time I was frustrated enough so that I actually did something
 about this and managed to hack together a function,
-run-python-classic, which and have mapped to it C-c C-c so that Emacs
+run-python-classic, which I have mapped to it C-c C-c so that Emacs
 runs Python code from a buffer the way I want it to.
 
 As a small bonus I also added some code to parse any #! at the top of
