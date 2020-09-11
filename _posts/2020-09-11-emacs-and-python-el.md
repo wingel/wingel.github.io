@@ -79,21 +79,19 @@ Python&nbsp;2 code and new Python&nbsp;3 code.
 One small itch scratched.  Now I just have to figure out what I was
 trying to actually write in Python before getting sidetracked.
 
-
-
     ;; Parse any #! line at the top of the file to figure out what
     ;; interpreter to use
     (defun get-script-interpreter ()
       (interactive)
       (let ((l (save-excursion
-		 (goto-char (point-min))
-		 (setq s (point))
-		 (move-end-of-line 1)
-		 (setq e (point))
-		 (buffer-substring-no-properties s e))))
-	(if (string-match "^\#![ \t]*\\(.*\\)" l)
-	    (match-string 1 l))
-	)
+                 (goto-char (point-min))
+                 (setq s (point))
+                 (move-end-of-line 1)
+                 (setq e (point))
+                 (buffer-substring-no-properties s e))))
+        (if (string-match "^\#![ \t]*\\(.*\\)" l)
+            (match-string 1 l))
+        )
       )
 
     ;; Run Python in a classic way like old python-mode.el used to do.
@@ -118,7 +116,7 @@ trying to actually write in Python before getting sidetracked.
       ;; the command to start the interpreter.  If not, pass nil and use
       ;; the default interpreter
       (let ((cmd (get-script-interpreter)))
-	(run-python cmd))
+        (run-python cmd))
 
       ;; Since there shouldn't be any long lived data in the *Python*
       ;; buffer buffer, don't ask for confirmation when killing it.
@@ -127,12 +125,12 @@ trying to actually write in Python before getting sidetracked.
       ;; Finally send the buffer contents to the process and bypass the
       ;; code that strips out if __name__ == '__main__'.
       (save-restriction
-	(widen)
-	(let* ((process (python-shell-get-process))
-	       (string (buffer-substring-no-properties (point-min) (point-max))))
-	  (python-shell-send-string string process)
-	  )
-	)
+        (widen)
+        (let* ((process (python-shell-get-process))
+               (string (buffer-substring-no-properties (point-min) (point-max))))
+          (python-shell-send-string string process)
+          )
+        )
       )
 
     ;; This doesn't play well with the interpreter stuff, so disable it
@@ -141,8 +139,8 @@ trying to actually write in Python before getting sidetracked.
     ;; Finally add a hook to replace C-c C-c with the classic variant
     (defun my-python-mode ()
       (setq py-indent-offset 4)
-	(setq indent-tabs-mode nil)
-	  (define-key python-mode-map "\C-c\C-c" 'run-python-classic)
-	    )
+        (setq indent-tabs-mode nil)
+          (define-key python-mode-map "\C-c\C-c" 'run-python-classic)
+            )
 
     (add-hook 'python-mode-hook 'my-python-mode)
