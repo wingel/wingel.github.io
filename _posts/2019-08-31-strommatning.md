@@ -151,7 +151,7 @@ bra ut.
 Svep från -1mA till +1mA. Här tog transimpedance-amplifierns mätområde
 slut. Den förstärker med 10000V/A och utspänningen kan variera mellan
 ungefär +/-3.5V vilket gör att den bara är linjär upp till ungefär
-+/-300µA. Men här börjar ju mätnignarna från shunt-resistorn vara bra
++/-300µA. Men här börjar ju mätningnarna från shunt-resistorn vara bra
 nog att ta över.
 
 ![png]({{ "images/2019-08-31-strommatning/m6.png" | relative_url }})
