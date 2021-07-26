@@ -1,14 +1,21 @@
+---
+layout: page
+title: License
+permalink: /license/
+---
+
 I might put small code snippes in my blog pages.  Personally I
 consider using such things as "fair use" and I'm not sure if it even
 needs a license.  Unless some other license is specified, you can
-consider any code on the blog as public domain, basically, do whatever
-you want with it and attribution is not needed, although it would be
-appreciated.
+consider any code on the blog as public domain.  Basically, do
+whatever you want with it, if you break it it's yours and you can't
+sue me for anything you do with the code.  Attribution is not needed,
+although it would be appreciated.
 
-If you need a more formal license for legals reasons, you can choose
-to use the [MIT license](https://opensource.org/licenses/MIT).
+If you need a more formal license for legals reasons, you can use, at
+your option, the [MIT license](https://opensource.org/licenses/MIT).
 
-Copyright 2011-2020 Christer Weinigel <christer@weinigel.se>
+Copyright 2011-2021 Christer Weinigel &lt;christer@weinigel.se&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
